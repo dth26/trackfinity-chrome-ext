@@ -1,0 +1,65 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html  >
+  <head>
+    <title>TrackFinity</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css">
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 12px;
+        width: 250px;
+        height: 100px;
+        padding: 0px;
+        margin: 0px;
+        background-color: #EBF2F5;
+      }
+      #title{
+        /*position: absolute;*/
+        color: white;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 20px;
+        width: 250px;
+        text-align: center;
+        background-color: #2D2E2E;
+        margin:0px;
+      }
+      #container{
+        width: inherit;
+      }
+      #track{
+        width: inherit;
+        text-align: center;
+        pointer-events: none;
+        cursor: default;
+        color: black;
+        display: block;
+        margin: 0 auto;
+        text-decoration: none;
+        outline: 0;
+
+      }
+      #track:active, #track:focus{
+        outline: 0;
+        border: none;
+        text-decoration: none;
+      }
+    </style>
+    
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> -->
+
+    <script src="test.js"></script>
+  </head>
+  <body>
+    <div id="title">TrackFinity</div>
+    <br>
+    <div id="container">
+      <a href="" id="track"  download></a>
+    </div>
+  </body>
+</html>
+

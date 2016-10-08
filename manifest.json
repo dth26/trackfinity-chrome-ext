@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "TrackFinity",
+  "description": "Making the world a better place one song at a time.",
+  "version": "1.3",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
